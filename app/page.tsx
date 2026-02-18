@@ -5,9 +5,6 @@ import { HowItWorks } from "@/components/how-it-works";
 import { Platforms } from "@/components/platforms";
 import { GlobalReach } from "@/components/global-reach";
 import { TrustedBy } from "@/components/trusted-by";
-import { Pricing } from "@/components/pricing";
-import { CTA } from "@/components/cta";
-import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -20,10 +17,7 @@ export default function Home() {
         <Platforms />
         <GlobalReach />
         <TrustedBy />
-        <Pricing />
-        <CTA />
       </main>
-      <Footer />
     </>
   );
 }
