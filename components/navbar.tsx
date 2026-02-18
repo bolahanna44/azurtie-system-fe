@@ -8,7 +8,6 @@ const navLinks = [
   { label: "Features", href: "#features" },
   { label: "Platforms", href: "#platforms" },
   { label: "Global Reach", href: "#global" },
-  { label: "Pricing", href: "#pricing" },
 ];
 
 export function Navbar() {
@@ -36,20 +35,7 @@ export function Navbar() {
           ))}
         </div>
 
-        <div className="hidden items-center gap-3 md:flex">
-          <Link
-            href="#pricing"
-            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Log in
-          </Link>
-          <Link
-            href="#pricing"
-            className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            Get Started
-          </Link>
-        </div>
+
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -73,20 +59,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <div className="flex flex-col gap-3 pt-4 border-t border-border">
-              <Link
-                href="#pricing"
-                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-              >
-                Log in
-              </Link>
-              <Link
-                href="#pricing"
-                className="rounded-md bg-primary px-4 py-2 text-center text-sm font-medium text-primary-foreground"
-              >
-                Get Started
-              </Link>
-            </div>
+
           </div>
         </div>
       )}
